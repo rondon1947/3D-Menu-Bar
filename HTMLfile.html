@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>3D Social Bar</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<style>
+		body
+		{
+			overflow: hidden;
+		}
+		body,html
+		{
+			height:100%;
+		}
+		body
+		{
+			font-family: tahoma;
+			color: #111;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			align-content: center;
+			justify-content: center;
+			background-color: #2c2b2b;
+		}
+		a:visited 
+		{ 
+  			color: inherit;
+		}
+		.container
+		{
+			width: 40px;
+			perspective: 1000px;
+		}
+		.cube
+		{
+			margin: auto;
+			position: relative;
+			width: 20px;
+			height: 20px;
+			transform-style: preserve-3d;
+			transition: transform 2s ease;
+			text-decoration-color: white;
+		}
+		.cube:hover
+		{
+			transform: rotateX(180deg) rotateY(720deg);
+		}
+		.side
+		{
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			text-transform: uppercase;
+			text-align: center;
+			text-decoration-color: white;
+		}
+		.side.back
+		{
+			transform: translateZ(-10px) rotateX(180deg);
+		}
+		.side.left
+		{
+			transform: translateX(-10px) rotateY(-90deg);
+		}
+		.side.right
+		{
+			transform: translateX(10px) rotateY(90deg);
+		}
+		.side.front
+		{
+			transform: translateZ(10px);
+		}
+		.side.top
+		{
+			transform: translateY(-10px) rotateX(90deg);
+		}
+		.side.bottom
+		{
+			transform: translateY(10px) rotateX(90deg);
+		}
+		.side.grey
+		{
+			color: #777;
+			background-color: white;
+			width: 20px;
+			height: 20px;
+		}
+		.side.black
+		{
+			color: white;
+			background-color: #ff0000;
+			width: 20px;
+			height: 20px;
+		}
+		.side.twitter
+		{
+			color: white;
+			background-color: #0084b4;
+			width: 20px;
+			height: 20px;
+		}
+		.side.facebook
+		{
+			color: white;
+			background-color: #3b5998;
+			width: 20px;
+			height: 20px;
+		}
+	</style>
+</head>
+<body>
+	<a href="https://www.youtube.com/channel/UCAepkrKRuWbiW37R9UxK6pQ?view_as=subscriber" target="_blank">
+		<div class="container">
+			<div class="cube">
+				<div class="side back black">
+					<i class="fab fa-youtube"></i>
+				</div>
+				<div class="side left grey">
+					<i class="fab fa-youtube"></i>
+				</div>
+				<div class="side front grey">
+					<i class="fab fa-youtube"></i>
+				</div>
+				<div class="side right grey">
+					<i class="fab fa-youtube"></i>
+				</div>
+				<div class="side top grey">
+					<i class="fab fa-youtube"></i>
+				</div>
+				<div class="side bottom grey">
+					<i class="fab fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+	</a>
+	<a href="https://twitter.com/RohanNishant2" target="_blank">
+		<div class="container">
+			<div class="cube">
+				<div class="side back twitter">
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div class="side left grey">
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div class="side front grey">
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div class="side right grey">
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div class="side top grey">
+					<i class="fab fa-twitter"></i>
+				</div>
+				<div class="side bottom grey">
+					<i class="fab fa-twitter"></i>
+				</div>
+			</div>
+		</div>
+	</a>
+	<a href="https://www.facebook.com/rohan.nishant.56" target="_blank">
+		<div class="container">
+			<div class="cube">
+				<div class="side back facebook">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="side left grey">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="side front grey">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="side right grey">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="side top grey">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="side bottom grey">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+			</div>
+		</div>
+	</a>
+</body>
+</html>
